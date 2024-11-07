@@ -20,3 +20,7 @@ app.use(cors());
 app.get("/profiles", (req, res) => {
   return res.json(profile);
 });
+
+app.get("/", (req, res) => {
+  return res.send("Hello world this is my first API");
+});
